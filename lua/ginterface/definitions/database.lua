@@ -1,0 +1,1 @@
+local self = GInterface.CreateDefinition ("Database")self:AddMethod ("Connect")self:AddMethod ("Disconnect")self:AddMethod ("EscapeString")self:AddMethod ("GetDatabaseListQuery")self:AddMethod ("GetTableListQuery")self:AddMethod ("IsConnected")self:AddMethod ("Query")

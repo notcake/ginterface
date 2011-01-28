@@ -1,0 +1,1 @@
+local self = {}GInterface.InterfaceProvider = GInterface.MakeConstructor (self)function self:ctor (interface, name)	self.Interface = interface	self.Name = nameend
