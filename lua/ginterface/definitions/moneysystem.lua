@@ -1,0 +1,36 @@
+local self = GInterface.CreateDefinition ("MoneySystem")
+
+self:AddEvent ("PlayerMoneyChanged")
+	:AddArgument ("string", "steamID")				:End ()
+	:AddArgument ("number", "money")				:End ()
+
+self:AddMethod ("AddPlayerMoney")
+	:AddArgument ("string", "steamID")				:End ()
+	:AddArgument ("number", "deltamoney")			:End ()
+
+self:AddMethod ("CanPlayerAfford")
+	:AddArgument ("string", "steamID")				:End ()
+	:AddArgument ("number", "money")				:End ()
+	:AddArgument ("function", "callback")
+		:PushCallback ()
+			:AddArgument ("string", "steamID")		:End ()
+			:AddArgument ("boolean", "canafford")	:End ()
+		:End ()
+	:End ()
+	
+self:AddMethod ("GetPlayerMoney")
+	:AddArgument ("string", "steamID")				:End ()
+	:AddArgument ("function", "callback")
+		:PushCallback ()
+			:AddArgument ("string", "steamID")		:End ()
+			:AddArgument ("number", "money")		:End ()
+		:End ()
+	:End ()
+	
+self:AddMethod ("RemovePlayerMoney")
+	:AddArgument ("string", "steamID")				:End ()
+	:AddArgument ("number", "deltamoney")			:End ()
+	
+self:AddMethod ("SetPlayerMoney")
+	:AddArgument ("string", "steamID")				:End ()
+	:AddArgument ("number", "money")				:End ()

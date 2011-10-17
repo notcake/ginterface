@@ -1,0 +1,1 @@
+local self = {}GInterface.CallbackMethod = GInterface.MakeConstructor (self, GInterface.Method)function self:ctor (name, argument)	self.Argument = argument	self.Name = nameendfunction self:End ()	return self.Argumentend

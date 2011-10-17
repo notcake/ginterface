@@ -1,0 +1,1 @@
+local self = GInterface.CreateDefinition ("E2 Channel")self:AddEvent ("Received")self:AddMethod ("Send")

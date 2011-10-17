@@ -1,0 +1,1 @@
+local self = GInterface.CreateDefinition ("Client")self:AddEvent ("Disconnected")self:AddMethod ("GetName")	:SetReturnType ("string")self:AddMethod ("GetPlayer")	:SetReturnType ("player")self:AddMethod ("GetServer")	:SetReturnType ("Server")self:AddMethod ("GetSteamID")	:SetReturnType ("string")self:AddMethod ("IsOnline")	:SetReturnType ("boolean")

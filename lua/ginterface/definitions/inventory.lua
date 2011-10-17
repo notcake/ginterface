@@ -1,0 +1,1 @@
+local self = GInterface.CreateDefinition ("Inventory")

@@ -1,0 +1,13 @@
+local self = GInterface.CreateDefinition ("PropProtection")
+
+self:AddMethod ("GetOwnerID")
+	:AddArgument ("entity", "entity")			:End ()
+	:AddArgument ("function", "callback")
+		:PushCallback ()
+			:AddArgument ("entity", "entity")	:End ()
+			:AddArgument ("string", "ownerID")	:End ()
+		:End ()
+	:End ()
+self:AddMethod ("SetOwnerID")
+	:AddArgument ("entity", "entity")			:End ()
+	:AddArgument ("string", "ownerID")			:End ()

@@ -1,0 +1,1 @@
+local self = GInterface.CreateDefinition ("ChatSystem")self:AddMethod ("GetChannelCount")	:SetReturnType ("number")self:AddMethod ("GetChannels")	:SetReturnType ("array")
