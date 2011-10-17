@@ -3,6 +3,6 @@
 	"name"				"GInterface library"
 	"author_name"			"!cake"
 	"author_email"			"cakenotfound@googlemail.com"
-	"info"				"Abstracts away all that crap."
+	"info"				""
 	"override"			"0"
 }
